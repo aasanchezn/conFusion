@@ -1,6 +1,10 @@
 
 
+.jumbotron{
+    
+    background: #9575CD ;
 
+}
 
 .row-header{
     margin:0px auto;
@@ -20,12 +24,12 @@
     padding: 20px 0px 20px 0px;
 }
 
-.jumbotron {
+/* .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
     background: #9575CD ;
     color:#fffaf0;
-}
+} */
 
 address{
     font-size:80%;
