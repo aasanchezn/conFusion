@@ -18,8 +18,85 @@
 </head>
 
 <body>
+
+    <!-- Modal Reserve Table-->
+    <div class="modal fade" id="reserveTable" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="text-center">Reserve a Table</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group row">
+                    <label for="inputGuessts" class="col-sm-2 col-form-label align-self-center">Number of Guessts</label>
+                
+                    <div class="col-sm auto align-self-center" id="inputGuessts">
+                        <div class=" form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class=" form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">3</label>
+                        </div>
+                    
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                            <label class="form-check-label" for="inlineRadio4">4</label>
+                        </div>
+                        <div class=" form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                            <label class="form-check-label" for="inlineRadio5">5</label>
+                        </div>
+                    
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                            <label class="form-check-label" for="inlineRadio6">6</label>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="section" class="col-sm-2 col-form-label align-self-center">Section</label>
+                    <div id="section" class="align-self-center col-sm-10">
+                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                            <button type="button" class="btn btn-success active">Non-Smoking</button>
+                            <button type="button" class="btn btn-danger">Smoking</button>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                        <label for="dateAndTime" class="col-sm-2 col-form-label align-self-center">Date and Time</label>
+                        <div id="dateAndTime" class="align-self-center col-sm-10">
+                            <input class="ml-3" type="date" name="trip-start" min="2022-05-01" max="2022-12-31" required>
+                            <input class="ml-1" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                        </div>
+                </div>
+                
+                <div class="form-group row">
+                    <div class="offset-md-2 col-md-10 my-1">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        <button type="submit" class="btn btn-primary">Reserve</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    </div>
+
     <!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -53,7 +130,7 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="width:100% important!">
         <div class="container-fluid">
@@ -84,9 +161,8 @@
                 </div>
                 <div class="col-md-6">
                     <img src="./img/logo.png" alt="" class="img-fluid mx-auto">
-                    <a href="#reserveForm" class="btn btn-warning btn-lg px-5 my-auto" role="button" 
-                    data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    data-bs-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>">
+                    <a class="btn btn-warning btn-lg px-5 my-auto" role="button"
+                    data-bs-toggle="modal" data-bs-target="#reserveTable">
                         Reserve Table
                     </a>
                 </div>
@@ -147,7 +223,7 @@
           </div>
 
         <!--  -->
-        <!-- <div class="row row-content align-items-center">
+        <div class="row row-content align-items-center">
 
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -224,11 +300,11 @@
                 </div>
             </div>
         
-        </div> -->
+        </div>
     
     </div>
 
-    <div class="row row-content">
+    <!-- <div class="row row-content">
             
         <div class="col-md-8 offset-md-2">
         
@@ -293,7 +369,7 @@
 
         </div>
         
-    </div>
+    </div> -->
 
     <footer class="footer">
         <div class="row row-header align-items-center">
