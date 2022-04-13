@@ -20,8 +20,7 @@
 
 .footer{
     background-color: #D1C4E9;
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
+    padding: 0.5rem;
 }
 
 /* .jumbotron {
@@ -51,4 +50,29 @@ body{
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px;
+}
+
+.carousel {
+    background:#512DA8;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+
+@media screen and (max-width:576px){    
+
+    .carousel-item img {
+        position:relative;
+        height: 150px;
+        width:100%;
+    }
 }
