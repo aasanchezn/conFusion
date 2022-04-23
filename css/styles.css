@@ -1,8 +1,5 @@
 .jumbotron {
   background: #9575CD; }
-  .jumbotron .col-md-6:nth-child(2) {
-    display: flex;
-    justify-content: space-between; }
 
 .row-header {
   margin: 0px auto;

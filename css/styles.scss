@@ -3,14 +3,9 @@ $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9; 
 
-.jumbotron{
-    
-    background: $background-light;
-    .col-md-6:nth-child(2){
-        display:flex;
-        justify-content: space-between;
-    }
 
+.jumbotron{ 
+    background: $background-light;
 }
 
 .row-header{
